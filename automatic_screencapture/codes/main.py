@@ -8,10 +8,13 @@ def main():
     # Define the region you want to capture (left, top, width, height)
     region = (735+8, 0+8, 1060, 1371)  # Example region, adjust as needed
 
-    # Create a directory to save images 
+    # Delete de old directory if exist
     images_dir = os.path.join("..", "images")
-    if not os.path.exists(images_dir):
-        os.makedirs(images_dir)
+    if os.path.exists(images_dir):
+        shutil.rmtree(images_dir)
+    
+    # Create the captures directory
+    os.makedirs(images_dir)
 
     # Delay to give you time to setup the screen
     time.sleep(5)

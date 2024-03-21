@@ -49,13 +49,15 @@ You can also install ImageMagick manually if you like but the advantage of insta
 ## Usage
 ```bash
 python main.py
-./convert.sh
+sh convert.sh
 ```
-
+> [!note] Note
+> To run the bash script you need to have installed [Git For Windows](https://gitforwindows.org, the easiest way to have install it is `scoop install main/git`.
 ## License
 MIT License.
 Copyright (c) 2024 Ciro Bermudez
 
 ## Project status
-The project is completed, it is easy to use and to modify. 
+The project is completed, it is easy to use and to modify to acomodate the user necesities.
+TODO: Check grammar in the REAMDE.md file
 
