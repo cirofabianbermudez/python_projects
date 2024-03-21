@@ -1,4 +1,5 @@
 import pyautogui
+import shutil
 import time
 import os
 
@@ -16,7 +17,7 @@ def main():
     time.sleep(5)
 
     # Repeat the process 130 times
-    for _ in range(130):
+    for _ in range(5):
         # Take a screenshot of the specified region
         screenshot = pyautogui.screenshot(region=region)
 
