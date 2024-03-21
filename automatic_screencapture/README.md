@@ -12,7 +12,7 @@ This project is intended to be used when you want to screencapture some content 
 
 ## Installation
 
-> [!note] Note
+> [!NOTE]
 > Tested with Python 3.9.9
 
 ```bash
@@ -51,8 +51,10 @@ You can also install ImageMagick manually if you like but the advantage of insta
 python main.py
 sh convert.sh
 ```
-> [!note] Note
+
+> [!NOTE]  
 > To run the bash script you need to have installed [Git For Windows](https://gitforwindows.org, the easiest way to have install it is `scoop install main/git`.
+
 ## License
 MIT License.
 Copyright (c) 2024 Ciro Bermudez
