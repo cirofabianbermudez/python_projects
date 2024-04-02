@@ -1,0 +1,14 @@
+uvm_void:
+  - inherits: []
+
+uvm_object:
+  - inherits: [uvm_void]
+
+uvm_phase:
+  - inherits: [uvm_object]
+
+uvm_report_object:
+  - inherits: [uvm_object]
+
+uvm_transaction:
+  - inherits: [uvm_object]

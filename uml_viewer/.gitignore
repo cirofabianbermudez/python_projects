@@ -1,0 +1,6 @@
+# Directories
+venv/
+images/
+
+# Files
+*.pdf
