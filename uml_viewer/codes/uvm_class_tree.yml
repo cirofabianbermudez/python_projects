@@ -1,14 +1,24 @@
 uvm_void:
-  - inherits: []
-
-uvm_object:
-  - inherits: [uvm_void]
-
-uvm_phase:
-  - inherits: [uvm_object]
-
-uvm_report_object:
-  - inherits: [uvm_object]
-
-uvm_transaction:
-  - inherits: [uvm_object]
+    uvm_object:
+        uvm_phase:
+            uvm_domain:
+            uvm_bottomup_phase:
+            uvm_task_phase:
+            uvm_topdown_phase:
+        uvm_transaction:
+            uvm_sequence_item:
+                uvm_sequence_base:
+                    uvm_sequence:
+        uvm_report_object:
+            uvm_component:
+                uvm_test:
+                uvm_env:
+                uvm_agent:
+                uvm_monitor:
+                uvm_scoreboard:
+                uvm_driver:
+                uvm_push_driver:
+                uvm_random_stimulus:
+                uvm_sequencer_base:
+                    uvm_sequencer_param_base:
+                        uvm_sequencer:

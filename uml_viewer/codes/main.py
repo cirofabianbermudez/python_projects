@@ -5,19 +5,34 @@ def load_yaml(file_path):
         data = yaml.safe_load(file)
     return data
 
-def print_hierarchy(dictionary, parent='', indent=0):
-    if parent:
-        print(' ' * indent + parent)
-    if parent in dictionary:
-        for child in dictionary[parent][0]['inherits']:
-            print_hierarchy(dictionary, child, indent + 4)
+def print_tree(map, prefix):
+
+    item_prefix = prefix + "├── "
+    sub_prefix  = prefix + "│   "
+
+    lenght = len(map.values());
+    # print(lenght)
+    counter = 1   
+
+    for key, value in map.items():
+
+        if counter == lenght:
+            sub_prefix  = prefix + "    "
+            item_prefix = prefix + "└── "
+            print(item_prefix + key)
+        else:
+            print(item_prefix + key)
+            counter = counter + 1
+
+        if value is not None:
+            print_tree(value, sub_prefix)
 
 if __name__ == "__main__":
     file_path = 'uvm_class_tree.yml'
     data = load_yaml(file_path);
+    print_tree(data, "")
 
-    for key, value in data.items():
-        print( key + ": " + str(value))
 
-    print_hierarchy(data)
+
+
 
