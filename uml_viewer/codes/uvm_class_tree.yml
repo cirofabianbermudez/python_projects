@@ -3,8 +3,29 @@ uvm_void:
         uvm_phase:
             uvm_domain:
             uvm_bottomup_phase:
+                uvm_connect_phase:
+                uvm_end_of_elaboration_phase:
+                uvm_start_of_simulation_phase:
+                uvm_extract_phase:
+                uvm_check_phase:
+                uvm_report_phase:
             uvm_task_phase:
+                uvm_run_phase:
+                uvm_pre_reset_phase:
+                uvm_reset_phase:
+                uvm_post_reset_phase:
+                uvm_pre_configure_phase:
+                uvm_configure_phase:
+                uvm_post_configure_phase:
+                uvm_pre_main_phase:
+                uvm_main_phase:
+                uvm_post_main_phase:
+                uvm_pre_shutdown_phase:
+                uvm_shutdown_phase:
+                uvm_post_shutdown_phase:
             uvm_topdown_phase:
+                uvm_build_phase:
+                uvm_final_phase:
         uvm_transaction:
             uvm_sequence_item:
                 uvm_sequence_base:
@@ -22,3 +43,7 @@ uvm_void:
                 uvm_sequencer_base:
                     uvm_sequencer_param_base:
                         uvm_sequencer:
+                        uvm_push_sequencer:
+                uvm_port_component_base:
+                    uvm_port_component:
+            uvm_cmdline_processor:

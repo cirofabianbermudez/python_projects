@@ -1,0 +1,20 @@
+uvm_void:
+  hierarchy:
+  attributes:
+    type: TYPE = int
+    string: FIELD = 'config'
+  methods:
+    find_all():
+    get_config():
+
+
+uvm_object:
+  hierarchy: uvm_void
+  attributes:
+  methods:
+    new():
+    use_uvm_seeding():
+    set_name():
+    get_name():
+    get_full_name():
+    get_inst_count():
